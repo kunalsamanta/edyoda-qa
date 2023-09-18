@@ -69,3 +69,16 @@ function printEvenNumbers(arr) {
   console.log("Even numbers:");
   printEvenNumbers(numbers);
   
+
+
+  //Question 7
+
+  function deleteAllOccurrences(arr, elementToDelete) {
+    return arr.filter(item => item !== elementToDelete);
+  }
+  
+  const originalArray = [1, 2, 3, 2, 4, 5, 2, 6];
+  const elementToDelete = 2;
+  
+  const newArray = deleteAllOccurrences(originalArray, elementToDelete);
+  console.log(newArray);
